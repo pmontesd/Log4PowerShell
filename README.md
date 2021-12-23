@@ -16,7 +16,11 @@ It supports ShouldProcess parameters, e.g., -WhatIf, Confirm, etc.
 
 ### Usage
 
+
+
 Examples of usage:
+
+The PowerShell execution policy in the computer where the script is to be run must be at least `RemoteSigned` (`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`).
 
 ```powershell
 PS> .\Remove-ArchiveItem.ps1 -JARFilePath C:\Users\myname\Downloads\MyJar.jar -ClassToDelete org/apache/commons/csv/CSVFormat.class
